@@ -1,7 +1,7 @@
-Training modules from EMC {code}
+Training modules from EMC dotnext
 ================================
 
-Welcome to the official training modules from the {code} team.  Here we will maintain all of our training material that we build ranging from general 101 level topics through advanced hands on workshops.
+Welcome to the official training modules from the EMC dotnext team.  Here we will maintain all of our training material that we build ranging from general 101 level topics through advanced hands on workshops.
 
 ### Accreditation
 
@@ -9,16 +9,16 @@ Here you will find all the DevOps-related quarterly accreditation training that 
 
 ### DevOps GeekWeek
 
-This is a 5-day class that Jonas Rosland and Matt Cowger are giving to interested individuals within EMC that want to go deeper and get hands on with developing applications in an Agile manner, focusing on 12-factor rules and running them on a Cloud Native platform.
+This is a 5-day class that the team offers to interested parties at EMC and partners going in depth on mondern cloud native practices (Agile, DevOps, CI/CD), platforms (Docker, Cloud Foundry), etc.
 
-### Docker Workshops
+### Workshops
 
-These are a collection of comprehensive workshops including Docker platform tools ranging from introductory topics with advanced concepts including storage and networking.
+These are a collection of comprehensive workshops including various platform tools ranging from introductory topics with advanced concepts including storage and networking.
 
 ### Maintainers
 
-Github|Twitter
------------|-----
-[@jrosland](https://github.com/jonasrosland)|[Jonas Rosland](https://twitter.com/jonasrosland)
-[@mcowger](https://github.com/mcowger)|[Matt Cowger](https://twitter.com/mcowger)
-[@kacole2](https://github.com/kacole2)|[Kendrick Coleman](https://twitter.com/kendrickcoleman)
+@mcowger, @bverkley, @fabiochiodini, @vtexan
+
+### Contributions:
+
+@jonasrosland
