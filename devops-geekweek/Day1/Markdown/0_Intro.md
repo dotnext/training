@@ -30,6 +30,9 @@
 #Tools
 
 [Git](https://help.github.com/articles/set-up-git/) 
+
 [CloudFoundry CLI](http://docs.cloudfoundry.org/devguide/installcf/) 
+
 [Docker for Mac](https://docs.docker.com/engine/installation/mac/#docker-for-mac) or [Docker for Windows](https://docs.docker.com/engine/installation/windows/#docker-for-windows) 
+
 [Slack](http://slack.com)
