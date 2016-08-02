@@ -6,6 +6,9 @@ The slides make use of a tool called remark.js to display in a browser, and as a
 
 `python3 -m http.server` from the root directory will give you what you need by accessing `http://localhost:8000`.  Python 2 users may need to use `python -m SimpleHTTPServer 8000`
 
+
 Another option is to use a SaaS like services for this like:
 
 <http://remarkjs.com/remarkise>
+
+Just copy the link to the .md you want to display.
