@@ -59,10 +59,10 @@ A freemium service to host Git repositories (repos). Public repos are free, priv
 
 Most open source projects are hosted and collaborated on here.
 
-'''
+```
 > If you're not on GitHub you don't exists.
 -- Friendly developer
-'''
+```
 ---
 
 #CloudFoundry CLI
