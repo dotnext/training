@@ -31,7 +31,7 @@
 
 - **Day 1**: Introduction, Agile, DevOps and Tools
 - **Day 2**: Version Control, Git and 12Factor
-  - *Lab for Git *
+  - *Lab for Git*
 - **Day 3**: Containers and Cloud Foundry
   - *Lab for Docker*
   - *Lab for Cloud Foundry*
@@ -40,6 +40,7 @@
 - **Day 5**: What can I sell? How do I sell it?
   - *Unconference*
   - *Retro*
+
 ---
 
 #Tools
