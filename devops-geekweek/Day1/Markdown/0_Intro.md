@@ -75,14 +75,15 @@ Simple commands to deploy, scale and monitor applications.
 
 #PCF Dev
 
-A portable and lightweight Pivotal Cloud Foundry (PCF) installation that runs as a single virtual machine (VM) on your workstation. 
+A portable and lightweight Pivotal Cloud Foundry (PCF) installation that runs as a single virtual machine (VM) on your workstation leveraging Virtualbox. 
 PCF Dev is intended for application developers who want to develop and debug their applications locally on a PCF deployment.
 
 PCF Dev includes Pivotal Elastic Runtime, Redis, RabbitMQ, and MySQL. It also supports all cf CLI functionality.
 
-It is also possible to deploy Docker conatiners via PCF Dev.
+It is also possible to deploy Docker containers via PCF Dev.
 
 Alternatives: use Pivotal Web Services (A PCF installation running in AWS)
+
 ---
 
 #Slack
