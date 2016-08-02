@@ -9,7 +9,7 @@ Here you will find all the DevOps-related quarterly accreditation training that 
 
 ### DevOps GeekWeek
 
-This is a 5-day class that the team offers to interested parties at EMC and partners going in depth on mondern cloud native practices (Agile, DevOps, CI/CD), platforms (Docker, Cloud Foundry), etc.
+This is a 5-day class that the team offers to interested parties at EMC and partners going in depth on modern cloud native practices (Agile, DevOps, CI/CD), platforms (Docker, Cloud Foundry), etc.
 
 ### Workshops
 
