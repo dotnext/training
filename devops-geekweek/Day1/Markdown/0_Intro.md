@@ -53,7 +53,7 @@ Other possible options: subversion (svn), mercurial (hg), Perforce (p4), ClearCa
 
 ---
 
-##GitHub?
+#GitHub?
 
 A freemium service to host Git repositories (repos). Public repos are free, private ones are still cheap.
 
