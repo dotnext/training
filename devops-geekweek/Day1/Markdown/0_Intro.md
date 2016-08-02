@@ -110,7 +110,7 @@ Think of it like IRC on 'roids'. Team chat with multiple channels, integrations 
 Often used to significantly replace email within Agile teams.
 
 
-![inline, 100%](images/Slack.png)
+![Alt text](/devops-geekweek/images/Slack.png "Slack")
 
 ---
 
