@@ -39,6 +39,8 @@
 
 [PCF Dev](https://docs.pivotal.io/pcf-dev/index.html)
 
+---
+
 #Git
 
 A distributed version control system, where every user has a complete and full copy of the source code.  
@@ -57,9 +59,10 @@ A freemium service to host Git repositories (repos). Public repos are free, priv
 
 Most open source projects are hosted and collaborated on here.
 
+'''
 > If you're not on GitHub you don't exists.
 -- Friendly developer
-
+'''
 ---
 
 #CloudFoundry CLI
