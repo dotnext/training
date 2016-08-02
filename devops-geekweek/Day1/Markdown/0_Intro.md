@@ -36,3 +36,5 @@
 [Docker for Mac](https://docs.docker.com/engine/installation/mac/#docker-for-mac) or [Docker for Windows](https://docs.docker.com/engine/installation/windows/#docker-for-windows) 
 
 [Slack](http://slack.com)
+
+[PCF Dev](https://docs.pivotal.io/pcf-dev/index.html)
