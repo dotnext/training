@@ -40,7 +40,7 @@
   - *Unconference*
 - **Day 5**: What can I sell? How do I sell it?
   - *Unconference*
-  - *Retro*
+  - *Retrospective (Retro)*
 
 ---
 
