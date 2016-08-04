@@ -15,6 +15,14 @@
 
 #What is Container in reality?
 
+"An isolated process that has its own filesystem and a name space"
+
+![](http://i.imgur.com/H5o0E0m.jpg)
+
+#And it is not just about docker...
+
+![](http://i.imgur.com/b9m2FK5.jpg)
+
 
 #What are layers in a Container?
 
