@@ -19,9 +19,7 @@
 
 ![](http://i.imgur.com/H5o0E0m.jpg)
 
-#And it is not just about docker...
 
-![](http://i.imgur.com/b9m2FK5.jpg)
 
 
 #What are layers in a Container?
@@ -56,6 +54,15 @@ Docker is a tool for running, creating, and managing application containers.
 
 
 ![](http://i.imgur.com/rlHa0Vw.jpg)
+
+#What Docker adds
+
+![](http://i.imgur.com/w6svnfS.jpg)
+
+#And it is not just about docker...
+
+![](http://i.imgur.com/b9m2FK5.jpg)
+
 
 
 #Containers **and** VMs
