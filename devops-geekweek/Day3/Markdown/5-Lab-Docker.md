@@ -97,3 +97,20 @@ RUN /bin/sh /tmp/mysql-setup.sh
 
 CMD ["/usr/sbin/mysqld"]
 ```
+
+More options are available: [here](https://docs.docker.com/)
+
+# For EMC employees only
+[Thanks to Joseph Heck :) ]
+
+If you have a problem when running `docker run` or `docker pull` where it hangs when pulling docker image layers and you are inside the EMC corporate network, it is likely that you are running into SSL certificate errors and trust issues between the Docker daemon and the public Docker Hub/CDN.  For this you must download our SSL certificate and place it inside the container host.
+
+- Open `http://gso.corp.emc.com/installupdatedcerts.aspx` and Download `EMCs SSL Decryption` certificate.
+- Open the file in a text editor and copy the contents
+- Run `docker-machine ssh containerhost` to SSH into the container host
+- Stop Docker by running `sudo /etc/init.d/docker stop`
+- In the Docker container host, create a new file and copy the `EMC SSL.cer` contents into it by running `vi EMC_SSL.cer`, press `i` to be able to insert text, paste the contents you copied above, then press `:wq` to write the file and quit the text editor
+- Convert the certificate to a PEM file with `openssl x509 -in EMC_SSL.cer -out EMC_SSL.pem`
+- Update the CA certificates files to include this certificate with `cat EMC_SSL.pem | sudo tee -a /etc/ssl/certs/ca-certificates.crt`
+- Start the Docker daemon services again with ```sudo /etc/init.d/docker start```
+- Verify that you can still connect to the Docker engine by running `docker version` and then verify that you can download images by doing `docker pull redis`
