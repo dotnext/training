@@ -180,7 +180,7 @@ For this reason, timeboxing depends on the prioritization of deliverables to ens
 
 #Agile Project Lifecycle
 ## Timeboxed iterations
-![inline](images/timebox.png)
+![inline](/devops-geekweek/images/timebox.png)
 
 ---
 
