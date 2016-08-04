@@ -16,6 +16,10 @@
 #What is Container in reality?
 
 
+#What are layers in a Container?
+
+![](http://i.imgur.com/kx77xdz.jpg)
+
 #Container vs Images
 A container is a running application. 
 
