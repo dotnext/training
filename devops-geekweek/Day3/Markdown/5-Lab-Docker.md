@@ -44,7 +44,7 @@ Type:
 docker ps
 ```
 
-* Dos you see any container running
+* Do you see any container running
 * Why?
 
 
@@ -56,4 +56,44 @@ Type:
 docker run -d ubuntu /bin/sh -c "while true; do echo hello world; sleep 1; done"
 ```
 
+* Test to seee if the container is running with docker ps
+* Examine its logs using the command 'docker logs' (you'll need its name..)
+* Kill the container with 'docker stop' (you'll need its name..)
 
+#Operating inside a container
+
+Type:
+```
+docker run -i -t ubuntu /bin/bash
+```
+
+* Has your shell changed?
+* what outputs do you get with ls -la or ifconfig?
+
+`CTRL-d` exits the shell and shuts down the container. If you want to detach from it (while keeping the container running but ) use `CTRL-p CTRL-q`
+
+
+#Build your own Container with a Dockerfile
+
+A Dockerfile is  a simple textfile that descriobes a container:
+* Where to start from (a linux distro usually)
+* Commands to run to customize it (installing packages and changing configuration files for instance)
+* Network port to use 
+* What to run
+
+DockerFile example
+
+```
+FROM ubuntu:12.04
+
+MAINTAINER Kimbro Staken version: 0.1
+
+ADD ./mysql-setup.sh /tmp/mysql-setup.sh
+RUN /bin/sh /tmp/mysql-setup.sh
+
+# Adding this will expose mysql on a random host port. It's recommended to avoid this. Other containers on the same 
+# host can use the service without it.
+#EXPOSE 3306
+
+CMD ["/usr/sbin/mysqld"]
+```
