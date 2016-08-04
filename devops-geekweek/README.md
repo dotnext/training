@@ -30,4 +30,4 @@ Just open the HTML files provided using a modern browser.
 
 ##How to contribute
 
-PLEASE NOTE: If you want to contribute remember to edit the HTML files after you change the relevant Markdown (.md) file
+**PLEASE NOTE:** If you want to contribute remember to edit the HTML files after you change the relevant Markdown (.md) file
