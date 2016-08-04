@@ -1,6 +1,6 @@
 # Agile 101
 
-> - You can't gather all the requirements up front
+> - You **can't** gather all the requirements up front
 - The requirements you do gather **will** change
 - There is always more to do than time and money will allow
 
