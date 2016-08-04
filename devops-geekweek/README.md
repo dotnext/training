@@ -15,3 +15,7 @@ Another option is to use a SaaS like services for this like:
 <http://remarkjs.com/remarkise>
 
 Just copy the link to the .md you want to display.
+
+### Option 3
+
+Use 
