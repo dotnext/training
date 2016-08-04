@@ -56,7 +56,9 @@ Importance: High. Its easy to do, and follows with the Config rules above
 
 * Build, Release and Run are separate stages for the application life cycle.
 
-> The process of turning the code into a bundle of scripts, assets and binaries that run the code is the build. The release sends that code to a server in a fresh package together with the nicely-separate config files for that environment (see Config again). Then the code is run so the application is available on those servers.
+> The process of turning the code into a bundle of scripts, assets and binaries that run the code is the **build**. 
+The **release** sends that code to a server in a fresh package together with the nicely-separate config files for that environment (see Config again). 
+Then the code is **run** so the application is available on those servers.
 
 ---
 
