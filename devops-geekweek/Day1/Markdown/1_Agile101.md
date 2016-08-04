@@ -6,8 +6,7 @@
 
 -- The Agile Samurai, J. Rasmusson
 
-^ Open this presentation with [Deckset](http://www.decksetapp.com/)
-^ Jonas
+
 
 ---
 
