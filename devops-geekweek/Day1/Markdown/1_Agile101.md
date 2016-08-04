@@ -8,7 +8,7 @@
 
 
 
----
+
 
 > 18% of software projects are considered "failed", 43% "challenged"
 
