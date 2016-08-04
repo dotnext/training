@@ -2,6 +2,8 @@
 
 ##How To View The Slideshow
 
+There are many options to display this course:
+
 ### Option 1
 
 The slides make use of a tool called remark.js to display in a browser, and as a result to view the slides in all their glory you'll need a webserver to properly serve them.  On any machine with python, this is easy:
@@ -23,3 +25,5 @@ Use remark.js
 <https://github.com/gnab/remark>
 
 Cross platform because it's browser based and still uses markdown mostly compatible with deckset.
+
+Just open the HTML files provided using a modern browser.
