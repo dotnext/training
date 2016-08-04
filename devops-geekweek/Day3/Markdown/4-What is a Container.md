@@ -35,3 +35,9 @@ They allow for delete and upgrade/Easier rollbacks if needed
 Docker is a tool for running, creating, and managing application containers.
 
 ![](http://i.imgur.com/rlHa0Vw.jpg)
+
+
+#Container **and** VMs
+
+![](http://i.imgur.com/hnGl9EU.jpg)
+
