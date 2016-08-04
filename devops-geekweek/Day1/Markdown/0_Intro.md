@@ -120,3 +120,5 @@ Often used to significantly replace email within Agile teams.
 An online 'Kanban' board to track tasks and completion.
 
 Very simple and user friendly, can be used for anything from sprint management to planning a birthday party.
+
+![](http://i.imgur.com/MNWZowF.jpg)
