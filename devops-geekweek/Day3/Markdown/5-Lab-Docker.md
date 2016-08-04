@@ -101,7 +101,7 @@ CMD ["/usr/sbin/mysqld"]
 More options are available: [here](https://docs.docker.com/)
 
 # For EMC employees only
-[Thanks to Joseph Heck :) ]
+**[Thanks to Joseph Heck :) ]**
 
 If you have a problem when running `docker run` or `docker pull` where it hangs when pulling docker image layers and you are inside the EMC corporate network, it is likely that you are running into SSL certificate errors and trust issues between the Docker daemon and the public Docker Hub/CDN.  For this you must download our SSL certificate and place it inside the container host.
 
