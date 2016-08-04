@@ -42,14 +42,14 @@ class: center, middle
 
 "An isolated process that has its own filesystem and a name space"
 
-![](http://i.imgur.com/H5o0E0m.jpg)
+![:scale 50%](http://i.imgur.com/H5o0E0m.jpg)
 
 ---
 
 
 #What are layers in a Container?
 
-![](http://i.imgur.com/kx77xdz.jpg)
+![:scale 50%](http://i.imgur.com/kx77xdz.jpg)
 
 
 ---
@@ -84,44 +84,44 @@ You create containers from images and you create images from containers.
 Docker is a tool for running, creating, and managing application containers.
 
 
-![](http://i.imgur.com/rlHa0Vw.jpg)
+![:scale 50%](http://i.imgur.com/rlHa0Vw.jpg)
 
 ---
 
 #What Docker adds
 
-![](http://i.imgur.com/w6svnfS.jpg)
+![:scale 50%](http://i.imgur.com/w6svnfS.jpg)
 
 ---
 
 #And it is not just about docker...
 
-![](http://i.imgur.com/b9m2FK5.jpg)
+![:scale 50%](http://i.imgur.com/b9m2FK5.jpg)
 
 ---
 
 #Containers **and** VMs
 
 
-![](http://i.imgur.com/hnGl9EU.jpg)
+![:scale 50%](http://i.imgur.com/hnGl9EU.jpg)
 
 ---
 
 #And there's more than just Containers
 
 
-![](http://i.imgur.com/bTNL1KK.jpg)
+![:scale 50%](http://i.imgur.com/bTNL1KK.jpg)
 
 ---
 
 #A whole ecosystem of Tools
 
-![](http://i.imgur.com/Ni7Qvgd.jpg)
+![:scale 50%](http://i.imgur.com/Ni7Qvgd.jpg)
 
 ---
 
 #With many Players
-![](http://i.imgur.com/t91EPXJ.jpg)
+![:scale 50%](http://i.imgur.com/t91EPXJ.jpg)
 
 ---
 
@@ -129,6 +129,10 @@ Docker is a tool for running, creating, and managing application containers.
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
     </script>
     <script>
+    remark.macros.scale = function (percentage) {
+      var url = this;
+      return '<img src="' + url + '" style="width: ' + percentage + '" />';
+    };
       var slideshow = remark.create();
     </script>
   </body>
