@@ -75,11 +75,11 @@ docker run -i -t ubuntu /bin/bash
 
 #Build your own Container with a Dockerfile
 
-A Dockerfile is  a simple textfile that descriobes a container:
-* Where to start from (a linux distro usually)
-* Commands to run to customize it (installing packages and changing configuration files for instance)
-* Network port to use 
-* What to run
+A Dockerfile is  a simple textfile that describes a container:
+* Where to start from (a linux distribution usually) **FROM**
+* Commands to run to customize it (installing packages and/or editing configuration files) **RUN**
+* Network port to use **EXPOSE**
+* What to run **CMD**
 
 DockerFile example
 
