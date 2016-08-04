@@ -184,31 +184,31 @@ For this reason, timeboxing depends on the prioritization of deliverables to ens
 ---
 
 # The Basics
-![inline](/devops-geekweek/images//basic.png)
+![inline](/devops-geekweek/images/basic.png)
 
 ---
 
 # Lifecycle
 
-![inline](/devops-geekweek/images//showcase.png)
+![inline](/devops-geekweek/images/showcase.png)
 
 ---
 
 # Iterative
 
-![inline](/devops-geekweek/images//iterative.png)
+![inline](/devops-geekweek/images/iterative.png)
 
 ---
 
 # Incremental
 
-![inline](/devops-geekweek/images//incremental.png)
+![inline](/devops-geekweek/images/incremental.png)
 
 ---
 
 # Minimum Viable Product (MVP)
 
-![inline](/devops-geekweek/images//mvp_fail_01.png)
+![inline](/devops-geekweek/images/mvp_fail_01.png)
 
 ---
 
