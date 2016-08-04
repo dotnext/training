@@ -26,7 +26,9 @@ You create containers from images and you create images from containers.
 #What are the benefits of Containers?
 
 They solve the "Works On My Machine" problem
+
 They make installation VERY simple
+
 They allow for delete and upgrade/Easier rollbacks if needed
 
 
@@ -34,10 +36,12 @@ They allow for delete and upgrade/Easier rollbacks if needed
 
 Docker is a tool for running, creating, and managing application containers.
 
+
 ![](http://i.imgur.com/rlHa0Vw.jpg)
 
 
-#Container **and** VMs
+#Containers **and** VMs
+
 
 ![](http://i.imgur.com/hnGl9EU.jpg)
 
