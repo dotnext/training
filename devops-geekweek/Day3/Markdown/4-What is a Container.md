@@ -29,11 +29,17 @@ You create containers from images and you create images from containers.
 
 #What are the benefits of Containers?
 
-They solve the "Works On My Machine" problem
+* Solve the "Works On My Machine" problem -> Eliminate environment inconsistencies
 
-They make installation VERY simple
+* Make installation VERY simple
 
-They allow for delete and upgrade/Easier rollbacks if needed
+* Allow for delete and upgrade/Easier rollbacks if needed <- NO OS Maintenance
+
+* Share applications in an easier and faster way
+
+* Open / Secure / Lightweight
+
+
 
 
 #Docker What is this?
