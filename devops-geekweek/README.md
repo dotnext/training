@@ -18,4 +18,8 @@ Just copy the link to the .md you want to display.
 
 ### Option 3
 
-Use 
+Use remark.js
+
+<https://github.com/gnab/remark>
+
+Cross platform because it's browser based and still uses markdown mostly compatible with deckset.
