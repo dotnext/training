@@ -133,7 +133,7 @@ Think of it like IRC on 'roids'. Team chat with multiple channels, integrations 
 Often used to significantly replace email within Agile teams.
 
 
-![](http://i.imgur.com/uwGmSRw.jpg)
+![:scale 60%](http://i.imgur.com/uwGmSRw.jpg)
 
 ---
 
@@ -153,6 +153,10 @@ Very simple and user friendly, can be used for anything from sprint management t
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
     </script>
     <script>
+    remark.macros.scale = function (percentage) {
+      var url = this;
+      return '<img src="' + url + '" style="width: ' + percentage + '" />';
+    };    
       var slideshow = remark.create();
     </script>
   </body>
