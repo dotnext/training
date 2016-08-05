@@ -48,6 +48,12 @@ PaaS is a category of cloud computing services that provides a platform allowing
 
 ---
 
+#PCF makes your life easier but has many Components
+
+![](http://i.imgur.com/mMY4e9E.jpg)
+
+---
+
 # Components
 
 ---
