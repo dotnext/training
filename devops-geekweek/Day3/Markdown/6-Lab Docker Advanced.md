@@ -11,10 +11,11 @@ This is what we would like you to achieve:
 * compile image
 * build swarm cluster
 * push 2 containers to cluster
-* edit app (html?)
+* edit app (just changing the html or adding some external microservice)
 * compile
 * redeploy your App again
-* 
+
+
 #Example Application
 
 Here is the application available for you to deploy and edit:
