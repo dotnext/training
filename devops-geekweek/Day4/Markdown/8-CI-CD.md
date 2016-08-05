@@ -38,6 +38,8 @@ Benefits of a Microservices Architecture
 * Teams free to use the right languages and tools for the job
 * Rapid application development
 
+![](http://i.imgur.com/2VpJetT.jpg)
+
 ---
 
 #Microservices Needs
