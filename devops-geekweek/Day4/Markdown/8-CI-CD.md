@@ -24,6 +24,13 @@ A **collaborative culture & philosophy** between technical teams, often **derive
 
 ![](http://i.imgur.com/dkmWVb3.jpg)
 
+---
+
+#As seen on Twitter
+
+![](http://i.imgur.com/8v1NdC6.jpg)
+
+---
 #Microservices
 
 Properties of a Microservice
