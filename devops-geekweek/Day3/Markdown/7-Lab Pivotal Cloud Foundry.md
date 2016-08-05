@@ -53,4 +53,4 @@ Here is how the app should loook like when deployed:
 
 Deploy the Application on PCF but using Docker Containers
 
-HINT: You have some instructions in the PCF dev installation document ;)
+**HINT:** You have some instructions in the PCF dev installation document ;)
