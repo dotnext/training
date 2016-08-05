@@ -90,4 +90,15 @@ Microservices are great, but they require:
 
 ---
 
+#CI/CD Tools
+* Jenkins (https://jenkins.io/)
+* Travis CI (https://travis-ci.org/ )
+* Buildbot ( http://buildbot.net/ )
+* Strider ( http://stridercd.com/ )
+* Go (http://www.go.cd/ )
+* Integrity (http://integrity.github.io/ )
+ 
+
+---
+
 
