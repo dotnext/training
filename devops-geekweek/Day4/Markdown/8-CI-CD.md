@@ -75,6 +75,7 @@ Microservices are great, but they require:
 * Merges Continuous Integration with automated deployment, test and release
 * Doesn’t mean every change is deployed to production ASAP but ready to be deployed at any time
 
+---
 
 #Phases of Continuous Delivery (too much?)
 
@@ -86,5 +87,7 @@ Microservices are great, but they require:
 * Deploy to Preproduction Environment 
 * Acceptance Test
 * Deploy to Production Environment
+
+---
 
 
