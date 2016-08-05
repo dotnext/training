@@ -31,6 +31,15 @@ A **collaborative culture & philosophy** between technical teams, often **derive
 ![](http://i.imgur.com/8v1NdC6.jpg)
 
 ---
+
+#Cloud Native Applications
+
+“Applications that do not require resilient infrastructure”
+
+![](http://i.imgur.com/Ktw0HUM.jpg)
+
+---
+
 #Microservices
 
 Properties of a Microservice
