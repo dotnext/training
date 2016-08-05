@@ -2,11 +2,15 @@
 
 ---
 
-# Part 1: What's a PaaS?
+#What's a PaaS?
 
----
 
 PaaS is a category of cloud computing services that provides a platform allowing customers to develop, run and manage applications without the complexity of building and maintaining the infrastructure typically associated with developing and launching an app.
+
+---
+#What is a Cloud Native Platform?
+
+TBD
 
 ---
 
@@ -56,7 +60,6 @@ PaaS is a category of cloud computing services that provides a platform allowing
 
 # Components
 
----
 
 * Cloud Controller
 
