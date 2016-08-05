@@ -1,8 +1,8 @@
-# [fit] Cloud Foundry & Related Services (TO BE UPDATED)
+# Cloud Foundry & Related Services (TO BE UPDATED)
 
 ---
 
-# [fit] Part 1: What's a PaaS?
+# Part 1: What's a PaaS?
 
 ---
 
@@ -48,7 +48,7 @@ PaaS is a category of cloud computing services that provides a platform allowing
 
 ---
 
-# [fit] Components
+# Components
 
 ---
 
@@ -203,7 +203,7 @@ $ cf logs --recent chargers2
 ---
 
 
-# [fit] cf push
+# cf push
 
 
 
@@ -211,7 +211,7 @@ $ cf logs --recent chargers2
 
 
 
-# [fit] now you!
+# now you!
 
 ```
 git clone https://github.com/mcowger/hello-python.git
