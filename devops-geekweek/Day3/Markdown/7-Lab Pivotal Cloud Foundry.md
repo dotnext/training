@@ -2,12 +2,14 @@
 
 #Lab Overview
 
-In this lab activity you'll be using Pivotal Cloud Foundry (PCF) to deploy scale and manage the application taht you deployed in the previous Docker Lab
+In this lab activity you'll be using **Pivotal Cloud Foundry (PCF)** to deploy, scale and manage the application that you deployed in the previous Docker Lab
 
 
 # Installing PCF Dev
 
-Please perform PCF Dev Installation following these instructions
+Please perform PCF Dev Installation following these instructions:
+
+[PCF Dev Basic Installation](https://my.syncplicity.com/share/2t7rvqo5igl9jd6/PCF%20Dev%20rev%200.3)
 
 #Lab Overview
 
