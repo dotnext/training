@@ -32,8 +32,10 @@ The Application has multiple endpoints:
 
 Here is how the app should loook like when deployed:
 
-`/`:
+`/` endpoint:
+
 ![index](https://raw.githubusercontent.com/dotnext/cf-sample-app/master/images/index.png)
 
-`/env`
+`/env` endpoint:
+
 ![env](https://raw.githubusercontent.com/dotnext/cf-sample-app/master/images/env.png)
