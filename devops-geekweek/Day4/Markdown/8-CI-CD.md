@@ -170,6 +170,6 @@ Microservices are great, but they require:
 
 ---
 
-![fill](images/loggly.png)
+![fill](http://i.imgur.com/F9MkT7k.jpg)
 
 
