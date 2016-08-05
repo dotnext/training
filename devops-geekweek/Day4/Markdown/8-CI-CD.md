@@ -61,4 +61,30 @@ Microservices are great, but they require:
 
 # Continuous Integration
 
+* The practice of merging development work with a Master/Trunk/Mainline branch constantly so to test changes
+* Promote the code testing as often as possible to catch issues early
+* Most of the work is done by automated tests via a unit test framework
+* Typically there is a build server performing these tests, so developers can continue working while tests are being performed
+
 ---
+
+#Continuous Delivery
+* The continual delivery of code to an environment once the developer feels the code is ready to ship
+* Be it either UAT, Staging or Production environments
+* The idea is to be constantly deliverying code to a user base, whether it be QA or customers for continual review and inspection
+* Merges Continuous Integration with automated deployment, test and release
+* Doesn’t mean every change is deployed to production ASAP but ready to be deployed at any time
+
+
+#Phases of Continuous Delivery (too much?)
+
+* Unit Test
+* Code Quality Analysis
+* Deploy to Test Environment 
+* Integration Test 
+* Packaging and Archiving 
+* Deploy to Preproduction Environment 
+* Acceptance Test
+* Deploy to Production Environment
+
+
