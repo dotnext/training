@@ -20,8 +20,10 @@
     <textarea id="source">
       # Lab Docker
 
+      ---
 
-      # Installing Docker
+      # Installing
+
       Prerequisites:
       * Make sure you have a 64bit OS
 
@@ -29,7 +31,10 @@
       * Windows 10: you may use Docker for windows (need to enable Hyper-V, beware this may interfere with Virtualbox in some setups)
       * Windows 7: Use [Docker Toolbox](https://www.docker.com/toolbox)
 
-      For both you have the option of installing a Linux VM and enable docker on that
+      On Mac:
+      * Docker for Mac: https://docs.docker.com/engine/installation/mac/
+
+      ---
 
       #Docker info
       First off we want to have a look at the Docker installation information, so run:
@@ -44,6 +49,8 @@
 
       This command displays many information: how many images we have downloaded,  how many containers we have running, version of Docker etc.
 
+      ---
+
       #Launching your first container
 
       Type:
@@ -54,6 +61,8 @@
       * docker run runs a container
       * ubuntu is the image (pulled from Docker Hub as this is the first time you used it)
       * /bin/echo is the command that the container executes
+
+      ---
 
       #Docker ps
 
@@ -67,6 +76,7 @@
       * Do you see any container running
       * Why?
 
+      ---
 
       #Launch a demonized container
       Let's start a container that will last longer
@@ -80,6 +90,8 @@
       * Examine its logs using the command 'docker logs' (you'll need its name..)
       * Kill the container with 'docker stop' (you'll need its name..)
 
+      ---
+
       #Operating inside a container
 
       Type:
@@ -88,10 +100,11 @@
       ```
 
       * Has your shell changed?
-      * what outputs do you get with ls -la or ifconfig?
+      * what outputs do you get with `ls -la` or `ifconfig`?
 
       `CTRL-d` exits the shell and shuts down the container. If you want to detach from it (while keeping the container running but ) use `CTRL-p CTRL-q`
 
+      ---
 
       #Build your own Container with a Dockerfile
 
@@ -100,6 +113,8 @@
       * Commands to run to customize it (installing packages and/or editing configuration files) **RUN**
       * Network port to use **EXPOSE**
       * What to run **CMD**
+
+      ---
 
       DockerFile example
 
@@ -119,6 +134,8 @@
       ```
 
       More options are available: [here](https://docs.docker.com/)
+
+      ---
 
       # For EMC employees only
       **[Thanks to Joseph Heck :) ]**

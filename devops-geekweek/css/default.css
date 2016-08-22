@@ -87,8 +87,8 @@
       h1, h2, h3, h4, h5, h6 {
           font-family: "metanormal_roman";
           letter-spacing: -0.04em;
-          font-weight: 500;
-          margin: 1em 0 0.5em;
+          font-weight: 200;
+          margin: 0.5em 0 0.5em;
       }
 
       b,
@@ -134,21 +134,21 @@
       }
 
       .remark-slide-content h1 {
-          font-size: 56px;
+          font-size: 50px;
           color: #2C95DD;
       }
 
       .remark-slide-content h2 {
-          font-size: 48px;
+          font-size: 44px;
           color: #2C95DD;
       }
 
       .remark-slide-content h3 {
-          font-size: 40px;
+          font-size: 38px;
       }
 
       .remark-slide-content h4 {
-          font-size: 36px;
+          font-size: 32px;
       }
 
       .remark-slide-content h5 {
