@@ -14,116 +14,95 @@
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
     </style>
+        <link rel="stylesheet" type="text/css" href="../css/default.css">
   </head>
   <body>
     <textarea id="source">
-
-class: center, middle
-
+      # What is a Container and how are people using it
 
 
-# What is a Container and how are people using it
+      ---
+
+      # What You'll Learn
+
+      * Whats is a Container
+      * What is Docker
+      * There's NO Docker "vs" VMs in reality
+      * Lab: Deploy your first container
+      * Lab: Deploy a Containerized App
+      * How CF is different :)
 
 
----
+      #What is Container in reality?
 
-# What You'll Learn
+      "An isolated process that has its own filesystem and a name space"
 
-* Whats is a Container
-* What is Docker
-* There's NO Docker "vs" VMs in reality
-* Lab: Deploy your first container
-* Lab: Deploy a Containerized App
-* How CF is different :)
-
----
-
-#What is Container in reality?
-
-"An isolated process that has its own filesystem and a name space"
-
-![:scale 60%](http://i.imgur.com/H5o0E0m.jpg)
-
----
+      ![](http://i.imgur.com/H5o0E0m.jpg)
 
 
-#What are layers in a Container?
-
-![:scale 100%](http://i.imgur.com/kx77xdz.jpg)
 
 
----
+      #What are layers in a Container?
+
+      ![](http://i.imgur.com/kx77xdz.jpg)
+
+      #Container vs Images
+      A container is a running application.
+
+      You create a container using an image. So think of an image like a recipe.
+
+      You create containers from images and you create images from containers.
+
+      #What are the benefits of Containers?
+
+      * Solve the "Works On My Machine" problem -> Eliminate environment inconsistencies
+
+      * Make installation VERY simple
+
+      * Allow for delete and upgrade/Easier rollbacks if needed <- NO OS Maintenance
+
+      * Share applications in an easier and faster way
+
+      * Open / Secure / Lightweight
 
 
-#Container vs Images
-A container is a running application. 
-
-You create a container using an image. So think of an image like a recipe.
-
-You create containers from images and you create images from containers.
-
----
-
-#What are the benefits of Containers?
-
-* Solve the "Works On My Machine" problem -> Eliminate environment inconsistencies
-
-* Make installation VERY simple
-
-* Allow for delete and upgrade/Easier rollbacks if needed <- NO OS Maintenance
-
-* Share applications in an easier and faster way
-
-* Open / Secure / Lightweight
-
----
 
 
-#Docker What is this?
+      #Docker What is this?
 
-Docker is a tool for running, creating, and managing application containers.
-
-
-![:scale 100%](http://i.imgur.com/rlHa0Vw.jpg)
-
----
-
-#What Docker adds
-
-![:scale 100%](http://i.imgur.com/w6svnfS.jpg)
-
----
-
-#And it is not just about docker...
-
-![:scale 100%](http://i.imgur.com/b9m2FK5.jpg)
-
----
-
-#Containers **and** VMs
+      Docker is a tool for running, creating, and managing application containers.
 
 
-![:scale 100%](http://i.imgur.com/hnGl9EU.jpg)
+      ![](http://i.imgur.com/rlHa0Vw.jpg)
 
----
+      #What Docker adds
 
-#And there's more than just Containers
+      ![](http://i.imgur.com/w6svnfS.jpg)
+
+      #And it is not just about docker...
+
+      ![](http://i.imgur.com/b9m2FK5.jpg)
 
 
-![:scale 100%](http://i.imgur.com/bTNL1KK.jpg)
 
----
+      #Containers **and** VMs
 
-#A whole ecosystem of Tools
 
-![:scale 100%](http://i.imgur.com/Ni7Qvgd.jpg)
+      ![](http://i.imgur.com/hnGl9EU.jpg)
 
----
+      #And there's more than just Containers
 
-#With many Players
-![:scale 100%](http://i.imgur.com/t91EPXJ.jpg)
 
----
+      ![](http://i.imgur.com/bTNL1KK.jpg)
+
+      #A whole ecosystem of Tools
+
+      ![](http://i.imgur.com/Ni7Qvgd.jpg)
+
+      #With many Players
+      ![](http://i.imgur.com/t91EPXJ.jpg)
+
+
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
