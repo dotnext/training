@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+        <link rel="stylesheet" type="text/css" href="../css/default.css">
+  </head>
+  <body>
+    <textarea id="source">
+      # Products
+
+      This module is dedicated to EMC employees
+
+      ---
+
+      # What You'll Learn
+
+      * An introduction to the Dojo Concept
+      * The Methodology and Practices used at the Dojo
+        * Pair Programming
+        * Test Driven Deployment (TDD)
+        * Avoiding WaterScrumFall
+        * Build Measure Leran Cycle
+        * Minimum Viable Product
+        * User Stories
+        * Retrospectives (Retros)
+      * How these practices are beneficial to every Customer
+      * Overview of Dojo Projects
+        * Unik
+        * Persistence for Cloud Foundry
+        * The latest and greatest ;)
+
+      ---
+
+
+      #Contents
+
+      This session is delivered via a standard PowerPoint deck as it contains information around product positioning and roadmap items.
+
+      ---
+
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+    remark.macros.scale = function (percentage) {
+      var url = this;
+      return '<img src="' + url + '" style="width: ' + percentage + '" />';
+    };
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
