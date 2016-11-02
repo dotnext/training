@@ -1,11 +1,11 @@
 Training modules from EMC dotnext
 ================================
 
-Welcome to the official training modules from the EMC dotnext team.  Here we will maintain all of our training material that we build ranging from general 101 level topics through advanced hands on workshops.
+Welcome to the official training modules from the Dell EMC dotnext team.  Here we will maintain all of our training material that we build ranging from general 101 level topics through advanced hands on workshops.
 
 ### Accreditation
 
-Here you will find all the DevOps-related quarterly accreditation training that we have created for EMC SEs and the general public.
+Here you will find all the DevOps-related quarterly accreditation training that we have created for Dell EMC System Engineers and the general public.
 
 ### DevOps GeekWeek
 
