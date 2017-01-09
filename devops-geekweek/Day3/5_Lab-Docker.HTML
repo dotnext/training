@@ -38,11 +38,7 @@
 
       #Docker info
       First off we want to have a look at the Docker installation information, so run:
-
-      `docker info`
-
-      This should give you an output similar to this:
-
+      
       ```
       $ docker info
       ```
@@ -58,7 +54,7 @@
       docker run ubuntu /bin/echo 'Hello world'
       ```
 
-      * docker run runs a container
+      * *docker run* runs a container
       * ubuntu is the image (pulled from Docker Hub as this is the first time you used it)
       * /bin/echo is the command that the container executes
 
@@ -106,7 +102,7 @@
 
       ---
 
-      #Build your own Container with a Dockerfile
+      # Build your own Container with a Dockerfile
 
       A Dockerfile is  a simple textfile that describes a container:
       * Where to start from (a linux distribution usually) **FROM**
@@ -116,7 +112,7 @@
 
       ---
 
-      DockerFile example
+      # DockerFile example
 
       ```
       FROM ubuntu:12.04
@@ -141,11 +137,17 @@
       **[Thanks to Joseph Heck :) ]**
 
       If you have a problem when running `docker run` or `docker pull` where it hangs when pulling docker image layers and you are inside the EMC corporate network, it is likely that you are running into SSL certificate errors and trust issues between the Docker daemon and the public Docker Hub/CDN.  For this you must download our SSL certificate and place it inside the container host.
-
+      ---
+      
+      # For EMC employees only (cont)
       - Open `http://gso.corp.emc.com/installupdatedcerts.aspx` and Download `EMCs SSL Decryption` certificate.
       - Open the file in a text editor and copy the contents
       - Run `docker-machine ssh containerhost` to SSH into the container host
       - Stop Docker by running `sudo /etc/init.d/docker stop`
+      
+      ---
+      
+      # For EMC employees only (cont)
       - In the Docker container host, create a new file and copy the `EMC SSL.cer` contents into it by running `vi EMC_SSL.cer`, press `i` to be able to insert text, paste the contents you copied above, then press `:wq` to write the file and quit the text editor
       - Convert the certificate to a PEM file with `openssl x509 -in EMC_SSL.cer -out EMC_SSL.pem`
       - Update the CA certificates files to include this certificate with `cat EMC_SSL.pem | sudo tee -a /etc/ssl/certs/ca-certificates.crt`
