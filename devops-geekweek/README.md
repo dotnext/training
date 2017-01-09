@@ -2,32 +2,20 @@
 
 ##How To View The Slideshow
 
-There are many options to display this course:
+Just open the HTML files provided using a modern browser.
 
-### Option 1
-
-The slides make use of a tool called remark.js to display in a browser, and as a result to view the slides in all their glory you'll need a webserver to properly serve them.  On any machine with python, this is easy:
-
-`python3 -m http.server` from the root directory will give you what you need by accessing `http://localhost:8000`.  Python 2 users may need to use `python -m SimpleHTTPServer 8000`
-
-### Option 2
-
-Another option is to use a SaaS like services for this like:
-
-<http://remarkjs.com/remarkise>
-
-Just copy the link to the .md you want to display.
-
-### Option 3
-
-Use remark.js
+The slides make use of a tool called remark.js to display in a browser, and as a result to view the slides in all their glory you'll need a webserver to properly serve them.  
 
 <https://github.com/gnab/remark>
 
-Cross platform because it's browser based and still uses markdown mostly compatible with deckset.
+The tool is cross platform because it's browser based and still uses markdown mostly compatible with deckset.
 
-Just open the HTML files provided using a modern browser.
+
 
 ##How to contribute
 
-**PLEASE NOTE:** If you want to contribute remember to edit the HTML files after you change the relevant Markdown (.md) file
+Just do it :)
+
+**PLEASE NOTE:** There are many ways to add images, one simple way is to add your image to the /images folder and then refer to it in the HTML files using a line like
+
+
