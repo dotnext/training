@@ -16,6 +16,8 @@ The tool is cross platform because it's browser based and still uses markdown mo
 
 Just do it :)
 
-**PLEASE NOTE:** There are many ways to add images, one simple way is to add your image to the /images folder and then refer to it in the HTML files using a line like
+**PLEASE NOTE:** There are many ways to add images, one simple way is to add your image to the /images folder and then refer to it in the HTML files using a line like:
+
+"![inline](../images/StoryPoints.jpg)"
 
 
