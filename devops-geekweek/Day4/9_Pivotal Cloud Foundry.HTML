@@ -18,7 +18,7 @@
   </head>
   <body>
     <textarea id="source">
-      # Cloud Foundry & Related Services (TO BE UPDATED)
+      # Cloud Foundry and Related Services
 
       ---
 
@@ -28,10 +28,14 @@
       PaaS is a category of cloud computing services that provides a platform allowing customers to develop, run and manage applications without the complexity of building and maintaining the infrastructure typically associated with developing and launching an app.
 
       ---
-      #What is a Cloud Native Platform?
-
-      TBD
-
+      # What is a Cloud Native Platform?
+      Cloud-native platforms offer a super set of functionality over and above the earlier PaaS offerings.
+      Not only they provide an abstraction of the IaaS layers offerered via self service but thei add built-in features, such as:
+      resiliency
+      log aggregation
+      user management and security
+      and more!!
+      
       ---
 
 
@@ -50,25 +54,25 @@
 
       ## Process for deploying/scaling app on EC2 / EHC / etc
 
-      1. Deploy VM (the easy part - handled by IaaS...CMDB?)
-      2. Secure VM (or write some puppet)
-      2. Install runtime (with what?  rpm?  tarball?)
-      3. install dependencies (or write some scripts)
-      4. Install application (tarball? RPM? git?)
-      5. Start application (how?  job engine?  keep it running?)
-      6. Modify load balancer (how?)
-      7. Modify firewall (how?)
-      8. Add health checks (to where?  http? tcp? )
+      1 Deploy VM (the easy part - handled by IaaS...CMDB?)
+      2 Secure VM (or write some puppet)
+      3 Install runtime (with what?  rpm?  tarball?)
+      4 install dependencies (or write some scripts)
+      5 Install application (tarball? RPM? git?)
+      6 Start application (how?  job engine?  keep it running?)
+      7 Modify load balancer (how?)
+      8 Modify firewall (how?)
+      9 Add health checks (to where?  http? tcp? )
 
       ---
 
       ## Process for deploying app on CF
 
-      1. `cf push app_name`
+      1 `cf push app_name`
 
       ## Process for scaling app on CF
 
-      1. `cf scale app_name -i instance_count`
+      1 `cf scale app_name -i instance_count`
 
       ---
 
