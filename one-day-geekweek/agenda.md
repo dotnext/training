@@ -65,9 +65,9 @@ A single day, heavy duty, partially hands-on introduction to discussions around 
 What can we sell?
 
 * DevOps Transformation Services
-* Neutrino & Project Bravo
+* Native Hybrid Cloud
 * DSSD
-* ECS & Rubicon
+* ECS
 * vCloud Air / Virtustream
 
 ---
