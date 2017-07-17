@@ -18,7 +18,7 @@
   </head>
   <body>
     <textarea id="source">
-      # CI-CD and PCF (title to be updated)
+      # CI-CD DevOps and Logging
 
 
       ---
@@ -28,9 +28,7 @@
       * An introduction to DevOps Constructs and Buzzwords
       * Whats is a Continuous Integration
       * What is Continuous Deployment
-      * PCF architecture
-      * PCF Components
-      * Value of PCF
+      * Logging
 
       ---
 
@@ -81,10 +79,10 @@
       #Microservices Needs
 
       Microservices are great, but they require:
-      * rapid provisioning
-      * solid monitoring
-      * rapid deployment
-      * devops culture
+      * Rapid provisioning
+      * Solid monitoring
+      * Rapid deployment
+      * DevOps culture
 
       ---
 
@@ -151,7 +149,7 @@
 
       * log everything
       * no really, everything
-      * `chargers.cfapps.io` logs ~73 MB/day
+      * [`chargers.cfapps.io` logs ~73 MB/day]
 
       ---
 
@@ -180,19 +178,19 @@
 
       # Log Management Tools
 
-      * splunk (http://www.splunk.com)
-      * loggly (http://www.loggly.com)
-      * logstash (https://github.com/elasticsearch/logstash)
+      * Splunk (http://www.splunk.com)
+      * Loggly (http://www.loggly.com)
+      * Logstash (https://github.com/elasticsearch/logstash)
         * "ELK" stack - elasticsearch, logstash, kibana
-      * graylog2
-      * many others
+      * Graylog2
+      * **Many** others
 
       ---
 
       # Logging Tips
-      * send all logs to `stdout` **and** logging system
-      * set alerts on messages of give `type` per `minute|hour|whatever`
-      * use correlation id to track a given transaction/request
+      * Send all logs to `stdout` **and** logging system
+      * Set alerts on messages of give `type` per `minute|hour|whatever`
+      * Use correlation id to track a given transaction/request
 
       ---
 
@@ -203,9 +201,13 @@
       # A loggly example
 
       ![fill](http://i.imgur.com/F9MkT7k.jpg)
-
-
-
+      
+      ---
+      
+      # An ELK Example
+      
+      ![inline](../images/ELKK.png)
+      
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
