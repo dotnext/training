@@ -30,6 +30,8 @@
       On Windows:
       * Windows 10: you may use Docker for windows (need to enable Hyper-V, beware this may interfere with Virtualbox in some setups)
       * Windows 7: Use [Docker Toolbox](https://www.docker.com/toolbox)
+      
+      NOTE: we suggest to use Docker toolbox if you are already using Virtualbox
 
       On Mac:
       * Docker for Mac: https://docs.docker.com/engine/installation/mac/
@@ -129,17 +131,17 @@
       CMD ["/usr/sbin/mysqld"]
       ```
 
-      More options are available: [here](https://docs.docker.com/)
+      More options are available: see [here](https://docs.docker.com/)
 
       ---
 
-      # For EMC employees only
+      # Notes for Dell EMC employees only
       **[Thanks to Joseph Heck :) ]**
 
       If you have a problem when running `docker run` or `docker pull` where it hangs when pulling docker image layers and you are inside the EMC corporate network, it is likely that you are running into SSL certificate errors and trust issues between the Docker daemon and the public Docker Hub/CDN.  For this you must download our SSL certificate and place it inside the container host.
       ---
       
-      # For EMC employees only (cont)
+      # For Dell EMC employees only (cont)
       - Open `http://gso.corp.emc.com/installupdatedcerts.aspx` and Download `EMCs SSL Decryption` certificate.
       - Open the file in a text editor and copy the contents
       - Run `docker-machine ssh containerhost` to SSH into the container host
@@ -147,7 +149,7 @@
       
       ---
       
-      # For EMC employees only (cont)
+      # For del EMC employees only (cont)
       - In the Docker container host, create a new file and copy the `EMC SSL.cer` contents into it by running `vi EMC_SSL.cer`, press `i` to be able to insert text, paste the contents you copied above, then press `:wq` to write the file and quit the text editor
       - Convert the certificate to a PEM file with `openssl x509 -in EMC_SSL.cer -out EMC_SSL.pem`
       - Update the CA certificates files to include this certificate with `cat EMC_SSL.pem | sudo tee -a /etc/ssl/certs/ca-certificates.crt`
