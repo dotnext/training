@@ -31,7 +31,7 @@
       * Windows 10: you may use Docker for windows (need to enable Hyper-V, beware this may interfere with Virtualbox in some setups)
       * Windows 7: Use [Docker Toolbox](https://www.docker.com/toolbox)
       
-      NOTE: we suggest to use Docker toolbox if you are already using Virtualbox
+      **NOTE:** we suggest to use Docker toolbox if you are already using Virtualbox
       ---
       # Installing On Mac
       
@@ -85,7 +85,7 @@
       docker run -d ubuntu /bin/sh -c "while true; do echo hello world; sleep 1; done"
       ```
 
-      * Test to seee if the container is running with docker ps
+      * Test to see if the container is running with docker ps
       * Examine its logs using the command 'docker logs' (you'll need its name..)
       * Kill the container with 'docker stop' (you'll need its name..)
 
@@ -109,7 +109,7 @@
       ```
       docker run -d -p 80 tutum/hello-world
       ```
-      * Test to seee if the container is running with docker ps
+      * Test to see if the container is up and running with docker ps
       * Are there additional information here? 
       * Can you figure out the port (-p) command?
       
@@ -192,10 +192,13 @@
       
       ---
       
-      # For del EMC employees only (cont)
+      # For Dell EMC employees only (cont)
       - In the Docker container host, create a new file and copy the `EMC SSL.cer` contents into it by running `vi EMC_SSL.cer`, press `i` to be able to insert text, paste the contents you copied above, then press `:wq` to write the file and quit the text editor
       - Convert the certificate to a PEM file with `openssl x509 -in EMC_SSL.cer -out EMC_SSL.pem`
       - Update the CA certificates files to include this certificate with `cat EMC_SSL.pem | sudo tee -a /etc/ssl/certs/ca-certificates.crt`
+      
+      ---
+       # For Dell EMC employees only (cont)
       - Start the Docker daemon services again with ```sudo /etc/init.d/docker start```
       - Verify that you can still connect to the Docker engine by running `docker version` and then verify that you can download images by doing `docker pull redis`
 
