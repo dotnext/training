@@ -32,8 +32,9 @@
       * Windows 7: Use [Docker Toolbox](https://www.docker.com/toolbox)
       
       NOTE: we suggest to use Docker toolbox if you are already using Virtualbox
-
-      On Mac:
+      ---
+      # Installing On Mac
+      
       * Docker for Mac: https://docs.docker.com/engine/installation/mac/
 
       ---
@@ -123,6 +124,7 @@
       ```
       docker run -d -p 80:80 tutum/hello-world
       ```
+      
       ---
       # How can you reach your web server?
       
@@ -132,11 +134,16 @@
       
       ![inline](../images/DockerToolboxDiagram.png)
       
+      ---
+      
       # So which are the commands?
       
       ![inline](../images/DockerToolbox-IP.png)
       
+      And now: 
+      
       ![inline](../images/DockerToolbox-IP-Tutum.png)
+      
       ---
 
       # Build your own Container with a Dockerfile
@@ -177,7 +184,8 @@
       ---
       
       # For Dell EMC employees only (cont)
-      - Open `http://gso.corp.emc.com/installupdatedcerts.aspx` and Download `EMCs SSL Decryption` certificate.
+      - Open `http://gso.corp.emc.com/installupdatedcerts.aspx` 
+      - Download `EMCs SSL Decryption` certificate.
       - Open the file in a text editor and copy the contents
       - Run `docker-machine ssh containerhost` to SSH into the container host
       - Stop Docker by running `sudo /etc/init.d/docker stop`
