@@ -103,8 +103,26 @@
       `CTRL-d` exits the shell and shuts down the container. If you want to detach from it (while keeping the container running but ) use `CTRL-p CTRL-q`
 
       ---
-      # Running a simple web server Container 
+      # Running a simple web server 
       
+      ```
+      docker run -d -p 80 tutum/hello-world
+      ```
+      * Test to seee if the container is running with docker ps
+      * Are there additional information here? 
+      * Can you figure out the port (-p) command?
+      
+      ---
+      # More Networking ;)
+      
+      * Can you launch the previous command again?
+      * What happens? Why?
+      
+      What about this:
+      
+      ```
+      docker run -d -p 80:80 tutum/hello-world
+      ```
       ---
       # How can you reach your web server?
       
@@ -118,7 +136,7 @@
       
       ![inline](../images/DockerToolbox-IP.png)
       
-      ![inline](../images/DockerToolbox-IP-2.png)
+      ![inline](../images/DockerToolbox-IP-Tutum.png)
       ---
 
       # Build your own Container with a Dockerfile
