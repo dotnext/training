@@ -49,11 +49,118 @@
       * Change the application and redeploy it
       * BONUS: BLUE/GREEN Deployment
       
+      
       ---
       
-      #Example Application
+      # Test Application
+      We will use the same application that we deployed with Docker:
+      
+      https://github.com/dotnext/hello-python
+      
+      The Application is a simple webserver written in Python and using Flask framework
 
-      Here is the application available for you to deploy and edit:
+      ---
+
+      # Application Details
+      
+      This is a python application that builds up a web server with some basic information on its environment
+      
+      ---
+      # Application Screenshots
+
+      Here is how the app should loook like when deployed:
+       
+      ![inline](../images/hello-python.png)
+
+      ---
+      
+      # Some useful commands for You
+      Connect to PCF Dev
+      ```
+      $ cf login -a https://api.local.pcfdev.io --skip-ssl-validation
+
+        admin
+        admin
+
+      #select 1
+      ```
+      ---
+      # Download the code from github
+      
+      ```
+      $ git clone https://github.com/dotnext/hello-python
+      ```
+      
+      ---
+      # Pushing the App to Cloud Foundry
+      
+      Change to the hello-python directory and push it :)
+      
+      ```
+      $ cd hello-python
+      
+      $ cf push
+      ```
+      - What's happening?
+      - What's the differnce beetween this process and the Docker run one?
+      - What is the cf push command doing?
+      
+      
+      ---
+      
+      # Validating that your App is running
+      
+      ```
+      $ cf apps
+      
+      $ cf app NAMEOFTHEAPP (figure it out)
+      
+      $ cf events NAMEOFTHEAPP
+      
+      $ cf logs NAMEOFTHEAPP
+      ```
+      - What are these commands doing?
+      - Do they provide value?
+      ---
+      # Scaling your app
+      ```
+      $ cf scale -i 3 NAMEOFTHEAPP
+      
+      $ cf app NAMEOFTHEAPP
+      
+      ```
+      - What was achieved here?
+      - What steps were performed by CF?
+      - What about logs and events?
+      
+      ---
+      
+      # Food for Thought
+      * What is the difference between deploying this to Cloud Foundry vs deploying this on Docker?
+      * Was it easier to deploy this?
+      * What are the additional functions performed by a Cloud Native Platform?
+      * Does it make sense for You to build these functions with a DIY approach?
+      
+      ---
+      #Bonus Stage
+
+      Deploy the Application on PCF but using Docker Containers
+
+      *HINT:* You have some instructions in the PCF dev installation document ;)
+      
+      ---
+      
+      # Food for Thought
+      * Is the platform providing additional value vs Docker stand-alone?
+      * Which are the use cases where you would yuse a platform to deploy "basic" containers?
+      * As a Dev would you choose to deploy Containers or code?
+      * What about Ops?
+      
+      ---
+      
+      #Another Example Application
+
+      Here is another application available for you to deploy and edit:
 
       https://github.com/dotnext/cf-sample-app
 
@@ -80,28 +187,6 @@
 
       ![env](https://raw.githubusercontent.com/dotnext/cf-sample-app/master/images/env.png)
 
-      ---
-      
-      # Food for Thought
-      * What is the difference between deploying this to Cloud Foudry vs deploying this on Docker?
-      * Was it easier to deploy this?
-      * What are the additional functions performed by a Cloud Native Platform?
-      * Does it make sense for You to build these functions with a DIY approach?
-      
-      ---
-      #Bonus Stage
-
-      Deploy the Application on PCF but using Docker Containers
-
-      *HINT:* You have some instructions in the PCF dev installation document ;)
-      
-      ---
-      
-      # Food for Thought
-      * Is the platform providing additional value vs Dosker stand-alone?
-      * Which are the use cases where you would yuse a platform to deploy "basic" containers?
-      * As a Dev would you choose to deploy Containers or code?
-      * What about Ops?
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
