@@ -267,23 +267,23 @@
       ---
       # How CF maps to 12 factor Apps Properties
       
-      *
-      *
-      *
-      *
-      *
-      *
+      * Codebase: taken for granted
+      * Dependencies: Buildpacks
+      * Configuration services: env variables/service binding
+      * Backing services: API endpoint
+      * Build, Release, Run: Diego Architecture
+      * Processes: cf push
       
       ---
       
       # How CF maps to 12 factor Apps Properties (cont.)
       
-      *
-      *
-      *
-      *
-      *
-      * 
+      * Port binding: HTTP and TCP routes
+      * Concurrency: cf scale
+      * Disposability: cf push/zero downtime deployment
+      * Dev/Prod parity: BOSH
+      * Logs: Loggregator
+      * Admin processes: BOSH errands/one-off CF Apps
       
       ---
 
