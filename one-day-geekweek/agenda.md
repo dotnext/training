@@ -64,11 +64,7 @@ A single day, heavy duty, partially hands-on introduction to discussions around 
 
 What can we sell?
 
-* DevOps Transformation Services
-* Native Hybrid Cloud
-* DSSD
-* ECS
-* vCloud Air / Virtustream
+* Delivered live
 
 ---
 
