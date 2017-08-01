@@ -1,19 +1,4 @@
-# What Can I Sell?
-
+# How can Dell EMC help?
 ---
 
-* DevOps Transformation Services
-  * talk to Bart Driscoll
-  
----
-
-
-* Neutrino & Native Hybrid Cloud
-  * Description coming post announcement
-* VxRail & VxRack
-
----
-
-* DSSD
-* ECS 2.2 & EOS2
-* vCloud Air / Virtustream
+Delivered live
