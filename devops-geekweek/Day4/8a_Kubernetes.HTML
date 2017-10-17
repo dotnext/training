@@ -27,44 +27,42 @@
       Container runtimes (runC, rkt ContainerD) are good at running containers on a single host. In a production environment you would probaly like to manage multiple hosts in order to create a scalable and highly available infrastructure. This can be attained by creating a central management unit. This unit is called *Container Orchestrator*.
       
       ---
-      # What is a Cloud Native Platform?
-      Cloud-native platforms offer a super set of functionality over and above the earlier PaaS offerings.
-      Not only they provide an abstraction of the IaaS layers offerered via self service but they add built-in features, such as:
-      * resiliency
-      * log aggregation
-      * user management and security
-      * Secrets management
-      * and more!!
+      # Containers in production Needs
+      Some examples are
+      * resiliency/fault tolerance
+      * Can scale
+      * Optimize resource usage
+      * Service discovery functionalities accross applications
+      * Make workloads/containers accessible from the outside
+      * Manage applications updates
       
       ---
       
-      #Cloud Native Platform
+      #Container orchestrators Examples
       
-       The ultimate goal of a Cloud Native Platform is to *make the software* build, test, deploy, and scale *cycle significantly faster*
-      
+      * Kubernetes
+      * Mesos Marathon
+      * Docker Swarm
+      * Hashicorp Nomad
+      * Amazon ECS
+      * Google GKE
+       
       ---
       
-      # Why Cloud Foundry?
+      # Container Orchestrator Functions
       
-
-      ```
-      > “Nobody has ever built cloud-native apps without a platform. They either build one themselves or they use Cloud Foundry.”
-      
-      -- Joshua McKenty, Field CTO of Pivotal Cloud Foundry
-      ``` 
-      
+      * Start containers on different hosts
+      * Connect containers living on different hosts
+      * Build services/high level constructs by gfrouping together containers and other elements (secrets, persistency etc)
+      * Manage multiple hosts
+      * Optimize and monitor the usage of resources accross hosts
+            
       ---
 
 
-      # CF 101
+      # Kubernetes 101
 
-      >what problems does it solve?
-
-      * managing operating systems sucks.
-      * managing runtimes sucks
-      * managing deployment of dependencies sucks
-      * managing application isolation sucks
-      * managing deployment tasks sucks
+      "Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications."
 
       ---
 
