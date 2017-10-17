@@ -63,224 +63,81 @@
       # Kubernetes 101
 
       "Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications."
-
+      
+      Also known asd K8S (there are 8 letters between K and S... engineers :P )
+      
+      Kubernetes is part of the Cloud Native Computing Foundation (CNCF) along with other notable projects like rkt, containerd, Prometheus, Linkerd, CNI and MORE.
       ---
 
 
-      ## Process for deploying/scaling app on EC2 / EHC / etc
-
-      1. Deploy VM (the easy part - handled by IaaS...CMDB?)
-      2. Secure VM (or write some puppet)
-      3. Install runtime (with what?  rpm?  tarball?)
-      4. Install dependencies (or write some scripts)
-      5. Install application (tarball? RPM? git?)
-      6. Start application (how?  job engine?  keep it running?)
-      7. Modify load balancer (how?)
-      8. Modify firewall (how?)
-      9. Add health checks (to where?  http? tcp? )
+      ## Who's using Kubernetes?
+ 
+      * Box
+      * eBay
+      * Pearson
+      * SAP
+      * Wikimedia
+      * Github
+      * And many more
 
       ---
 
-      ## Process for deploying app on CF
+      ## Kubernetes Architecture
 
-      * `cf push app_name`
+      * Master Nodes
+      * Worker Nodes
+      * Distributed key value store (etcd)
 
-      ## Process for scaling app on CF
-
-      * `cf scale app_name -i instance_count`
-
-      ---
-
-      #PCF makes your life easier using different Components
-
-      ![](http://i.imgur.com/mMY4e9E.jpg)
-
-      ---
-
-      # Components
-
-
-      * Cloud Controller
-      * UAA
-      * Diego
-      * Loggregator
-      * GoRouter
-      * Buildpacks
-      * Services
-      * BOSH
-
-      ---
+      ## Kubernetes Installation
+      Kubernetes can be installed on:
+      * Virtual machines
+      * Bare Metal
+      It can be installed on different OSes like for example CoreOS, RHEL, SUSE, Ubuntu etc
       
-      # High Level Overview of Cloud Foundry
       
-      ![inline](../images/FC-CF.png)
-      
-      ---
-      
-      # Cloud Foundry: Layers and "Contracts"
-      
-      ![inline](../images/CFLayers.png)
-      
-      ---
-      # App Deployment Detailed Overview
-      
-      ![inline](../images/AppDeploymentOverview.png)
       
       ---
 
-      # Cloud Controller
-
-      * API layer
-      * `cf` cli talks to this layer
+      # Kubernetes Installation Tools
+      
+      Some examples are:
+      * kubeadm
+      * Kubespray
+      * Kubo
+      * Pivotal Container Services (PKS)
+      * Kops
+      
+      Or you can install it from scratch following Kelsey Hightwower's "Kubernetes the hard way" book/github repo
       
       ---
-      # Example
+
+      # Master Node
+
+
+      * API Server
+      * Scheduler
+      * Controller Manager
+      * etcd (optional can be external)
+     
+      ---
       
-      ```
-      mcowger@hex:~
-      $ cf apps
-      Getting apps in org EVP / space EMC as matt.cowger@emc.com...
-      OK
-
-      name                    requested state   instances   memory   disk   urls
-      boisecode               stopped           0/1         128M     1G     boisecode.cfapps.io
-      bourbonTweetAlerts      started           1/1         256M     1G     bourbontweetalerts.cfapps.io
-      cfworker                started           1/1         128M     1G     cfworker.cfapps.io
-      ```
-
-      ---
-
-      # UAA
-      **User Account and Authentication**
-      
-      * Authentication layer
-      * Internal or LDAP Backend
-      * OAUTH2 Provider
-      * Recent Dell EMC work
-
-      ---
-
-
-      # Diego
-
-      Elastic Runtime Components
-
-        * Container Management (through Garden)
-        * Container Scheduling
-        * Droplet Creation
-        * Placement / Availability Management
-        * Deployment of Applications
-
-      > Recent rewrite to enable new hotness
-
-      ---
-
-      # Loggregator
-
-      * Platform for delivering application log output
-      * Collates as needed
-      * `Firehose` too
-
-
-      ##Example
-
-      ```
-      $ cf logs --recent chargers2
-      2015-06-02T08:45:42.48-0700 [App/0]      OUT chargers2.cfapps.io - [02/06/2015:15:45:42 +0000] "GET / HTTP/1.1" 200 0 8461 ...
-      2015-06-02T08:45:45.06-0700 [App/1]      OUT chargers2.cfapps.io - [02/06/2015:15:45:45 +0000] "GET / HTTP/1.1" 200 0 8461 ...
-
-      ```
-
-
-      ---
-
-      # Gorouter
-
-
-      * Accepts requests for a specific 'route' (URL)
-      * Passes them to available applications and instances assigned to that route (possibly more than 1)
-      * Can be replaced by other load balancers if needed
-
-      ---
-
-      # Buildpacks
-
-      Provide basis for running application:
-
-        * Language runtime (`Ruby`, `Python`, `COBOL`, `Java`, etc)
-        * Module installation (as needed)
-        * Debugger setup (as needed)
-        * anything language or environment specific
-
-      ---
-
-      # Services
-
-      > no application is an island
-
-      External tools automatically provisioned and attached
-
-        * Databases (MySQL, Oracle, Postgres)
-        * NoSQL (Redis, MongoDB, etc)
-        * Message Queues (0mq, RabbitMQ, etc)
-
-
-      ---
-
-      # BOSH
-
-      * Responsible for using the IaaS (vSphere, vCD, OpenStack, AWS, etc) to build virtual machines
-      * VMs are called 'cells'
-        * CF on Bare Metal is coming :)
-        * Currently based on Ubuntu
-        * Support for VMware Photon is planned
-
-      ---
-
-
-      # BOSH (Cont)
-
-      * Responsible for managing:
-        * Long Running Processes (services, apps, parts of itself)
-        * Tasks (single run requests (deploy X, create Y))
-        * Upgrades of infrastructure
-
-      ---
-      # Infrastructure as Code in Cloud Foundry
-      
-      * Multi-IaaS, Integrated API
-      * Configuration changes
-      * No downtime
-      * Updates/upgrades
-      * Remediation
-      * Scale out/scale in
-      * Consistency and Reliability
-      
-      ---
-      # BOSH Overview
-      
-       ![inline](../images/BoshDiagram.png)
-      
-      ---
-      # How CF maps to 12 factor Apps Properties
-      
-      * Codebase: taken for granted
-      * Dependencies: Buildpacks
-      * Configuration services: env variables/service binding
-      * Backing services: API endpoint
-      * Build, Release, Run: Diego Architecture
-      * Processes: cf push
+      # Worker Node
+      Runs the applications using Pods and is controlled by the Master Node
+      * Container runtime
+      * kubelet
+      * kube-proxy
       
       ---
       
-      # How CF maps to 12 factor Apps Properties (cont.)
+      # etcd
       
-      * Port binding: HTTP and TCP routes
-      * Concurrency: cf scale
-      * Disposability: cf push/zero downtime deployment
-      * Dev/Prod parity: BOSH
-      * Logs: Loggregator
-      * Admin processes: BOSH errands/one-off CF Apps
+      Key value store that serves as a datastore for the cluster state
+      Also used to store configuration details such as subnets, Secrets, etc. 
+      
+      ---
+      # Minikube
+      
+      ![inline](../images/minikube-logo.jpg)
       
       ---
 
