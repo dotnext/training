@@ -74,6 +74,7 @@
       * Secrets are stored in the tmpfs of the container host running the pod and are made available only to the specific container(s) needing them.
       * Secrets are written unencrypted in etcd (as of Jan 2018)
       * Remember that base64 encoding is *NOT* an un acceptable form of encryption
+      * Secret files can also be mounted as a volume type
       
       Check here for the (latest) best practices on handling secrets:
       https://kubernetes.io/docs/concepts/configuration/secret/#security-properties
