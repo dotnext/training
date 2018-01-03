@@ -29,6 +29,21 @@
       ---
       # A basic pod .yaml
       
+      ```
+      apiVersion: v1
+      kind: Pod
+      metadata:
+       name: nginx
+       labels:
+         name: nginx
+     spec:
+       containers:
+         - name: nginx
+       image: nginx
+       ports:
+       - containerPort: 80
+      ```
+      
       ---
       # The Pause Container
       
