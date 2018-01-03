@@ -30,20 +30,7 @@
       
       #A basic pod .yaml
       
-      ```
-      apiVersion: v1
-      kind: Pod
-      metadata:
-       name: nginx
-       labels:
-         name: nginx
-     spec:
-       containers:
-         - name: nginx
-       image: nginx
-       ports:
-       - containerPort: 80
-      ```
+   
       
       ---
       
@@ -88,7 +75,8 @@
       
       Some data (such as passwords, OAuth tokens, and ssh keys) must be handled with care so Kubernetes offers a Secrets API.
       
-      [This way you can keep configuration separated from the code in a true 12F way: the secret is created independently from the pod/pods that uses it ;) ]
+      This way you can keep configuration separated from the code in a true 12F way: 
+      the secret is created independently from the pod/pods that uses it ;)
       
       * Secrets are stored in the tmpfs of the container host running the pod and are made available only to the specific container(s) needing them.
       * Secrets are written unencrypted in etcd (as of Jan 2018)
