@@ -67,8 +67,26 @@
       
       # Secrets
       
-      * 1
-            
+      Some data (such as passwords, OAuth tokens, and ssh keys) must be handled with care so Kubernetes offers a Secrets API.
+      
+      [This way you can keep configuration separated from the code in a true 12F way ;) ]
+      
+      Check here for the (latest) best practices on handling secrets:
+      https://kubernetes.io/docs/concepts/configuration/secret/#security-properties
+      
+      ---
+      # A secret yaml Example
+      
+      ```
+      apiVersion: v1
+      kind: Secret
+      metadata:
+          name: mysecret
+          type: Opaque
+      data:
+          username: YWRtaW4=
+          password: MWYyZDFlMmU2N2Rm
+      ```
       ---
 
       # Demo
