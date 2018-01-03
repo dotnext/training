@@ -174,9 +174,11 @@
       
       Type this command to test that your Kubernetes setup is working:
       
+      ```
       kubectl run hi --quiet --rm --attach --restart=Never --image=alpine  -- sh -c 'sleep 3; echo "Hello from Kubernetes!"'
+      ```
       
-      You should get something like this
+      You should get something like this:
       
       ![inline](../images/HelloWorld.png)
       
