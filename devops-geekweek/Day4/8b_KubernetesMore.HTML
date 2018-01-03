@@ -78,6 +78,10 @@
       This way you can keep configuration separated from the code in a true 12F way: 
       the secret is created independently from the pod/pods that uses it ;)
       
+      ---
+      
+      # More on Secrets
+      
       * Secrets are stored in the tmpfs of the container host running the pod and are made available only to the specific container(s) needing them.
       * Secrets are written unencrypted in etcd (as of Jan 2018)
       * Remember that base64 encoding is *NOT* an un acceptable form of encryption
