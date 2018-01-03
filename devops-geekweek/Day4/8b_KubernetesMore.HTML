@@ -50,7 +50,22 @@
       # Kubernetes API
       
       Everything in Kubernetes is treated as an API object and has a corresponding entry in the API.
-      You can interact with Kubernetes using commands (kubectl, kubeadm etc) or you can just access the REST API to view edit or delete elements in your Kubernetes installation. 
+      
+      How can you interact with Kubernetes?
+      * using CLI commands (kubectl, kubeadm etc) 
+      * or you can just access the REST API to view edit or delete elements in your Kubernetes installation
+      
+      For example to check the pods running:
+      
+      ```
+      kubectl.exe create -f .\mysql-secret.yaml
+      ```
+      
+      OR:
+      
+      ```
+      curl -s http://localhost:8000/api/v1/nodes | jq '.items[] .metadata.labels'
+      ```
       
       ---
       
@@ -58,7 +73,7 @@
       
       Namespaces are a way to segment your Kubernetes cluster in smaller chunks.
       
-      They can be used to segment a physical cluster for different teams (App1, app2 etc) or differnt use (Production, QA, test etc).
+      They can be used to segment a physical cluster for different teams (App1, app2 etc) or different use cases (Production, QA, test etc).
       
       ---
       
