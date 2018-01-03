@@ -51,12 +51,18 @@
       
       ---
       
+      # Volumes
+      
+      ---
+      
       # Persistent Volumes
       
-      * 1
-      * 2
-      * 3
-       
+      * Create Persistent Volume (pv) resource
+      * Create Persistence Volume Claim (pvc)
+      * Write a manifest for a pod that uses this (persistent volume claim as a volume type)
+      
+      Since Kubernetes 1.6 you could use dynamic provisioning: with this Kubernetes creates a persistent volume corresponding to the claim made by the users. 
+      Dynamic provisioning is supported by an API (StorageClass) that lets the administrator define a persistence volume provisoner of a certain type, then the user can self serve from that.
       ---
       
       # Secrets
