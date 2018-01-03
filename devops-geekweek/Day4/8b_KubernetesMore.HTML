@@ -24,7 +24,13 @@
 
       #What's in a Pod?
 
-      TBD
+      A pod is the simplest workload you can create in Kubernetes. It is a unit of deployment ie a single instance of an application.
+      
+      A pod can contain:
+      * one or more containers
+      * storage resources
+      * IP
+      * Options to configure the Pod 
       
       ---
       
@@ -43,11 +49,16 @@
       ---
       # Kubernetes API
       
+      Everything in Kubernetes is treated as an API object and has a corresponding entry in the API.
+      You can interact with Kubernetes using commands (kubectl, kubeadm etc) or you can just access the REST API to view edit or delete elements in your Kubernetes installation. 
       
       ---
       
       # Namespaces
       
+      Namespaces are a way to segment your Kubernetes cluster in smaller chunks.
+      
+      They can be used to segment a physical cluster for different teams (App1, app2 etc) or differnt use (Production, QA, test etc).
       
       ---
       
@@ -56,9 +67,11 @@
       A Deployment controller provides declarative updates for Pods and ReplicaSets.
       
       A deployment construct is used to
-      * Scale containers
+      * Scale the application to handle more load
       * Perform Rolling upgrades
       * Rollback upgrades
+      
+      And in general define the *desired*state of a pod (in term of version installed, instances etc)
       
       ---
       # Deployments yaml example
