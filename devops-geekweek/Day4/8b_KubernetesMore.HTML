@@ -56,13 +56,11 @@
       * or you can just access the REST API to view edit or delete elements in your Kubernetes installation
       
       For example to check the pods running:
-      
-      ```
+            ```
       kubectl.exe create -f .\mysql-secret.yaml
       ```
       
       OR:
-      
       ```
       curl -s http://localhost:8000/api/v1/nodes | jq '.items[] .metadata.labels'
       ```
@@ -86,7 +84,7 @@
       * Perform Rolling upgrades
       * Rollback upgrades
       
-      And in general define the *desired*state of a pod (in term of version installed, instances etc)
+      And in general define the *desired state* of a pod (in term of version installed, instances etc)
       
       ---
       # Deployments yaml example
