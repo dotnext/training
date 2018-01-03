@@ -69,7 +69,11 @@
       
       Some data (such as passwords, OAuth tokens, and ssh keys) must be handled with care so Kubernetes offers a Secrets API.
       
-      [This way you can keep configuration separated from the code in a true 12F way ;) ]
+      [This way you can keep configuration separated from the code in a true 12F way: the secret is created independently from the pod/pods that uses it ;) ]
+      
+      * Secrets are stored in the tmpfs of the container host running the pod and are made available only to the specific container(s) needing them.
+      * Secrets are written unencrypted in etcd (as of Jan 2018)
+      * Remember that base64 encoding is *NOT* an un acceptable form of encryption
       
       Check here for the (latest) best practices on handling secrets:
       https://kubernetes.io/docs/concepts/configuration/secret/#security-properties
