@@ -35,6 +35,8 @@
       A pod represents an application via a group of co-located containers
       Containers in a pod share the same network namespace
       
+      A pod is *ephemeral* : it gets a new id if restarted
+      
       ---
       
       #A basic pod .yaml
@@ -59,7 +61,7 @@
       * or you can just access the REST API to view edit or delete elements in your Kubernetes installation
       
       For example to check the pods running:
-            ```
+      ```
       kubectl.exe create -f .\mysql-secret.yaml
       ```
       
@@ -88,12 +90,15 @@
       
       # Deployments
       
-      A Deployment controller provides declarative updates for Pods and ReplicaSets
+      A Deployment controller provides declarative updates for Pods and Replica Sets
       
       A deployment construct is used to
       * Scale the application to handle more load
       * Perform Rolling upgrades
       * Rollback upgrades
+      
+      Rates of upgrade can be controlled and stopped/restarted if needed
+      It can also be tracked to to roll backs
       
       And in general define the *desired state* of a pod (in term of version installed, instances etc)
       
@@ -101,6 +106,18 @@
       # Deployments yaml example
       
       ![inline](../images/DeploymentsYaml.png)
+      
+      
+      ---
+      # Stateful Sets
+      * Give a unique identity to pods
+      * Identity persists over pod redeschuling
+      * Used when applications need stable network ids, persistent storage
+
+      ---
+      # Stateful Sets Use case
+      
+      ![inline](../images/StatefulSets.png)
       
       ---
       
