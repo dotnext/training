@@ -77,10 +77,18 @@
       They can be used to segment a physical cluster for different teams (App1, app2 etc) or different use cases (Production, QA, test etc).
       
       ---
+      # Replica Sets
+      
+      Functions:
+      * Maintain a certain number of Pods are running (declarative)
+      * Restart pod in case of failures
+      * Also useful for scaling up/down pods
+      
+      ---
       
       # Deployments
       
-      A Deployment controller provides declarative updates for Pods and ReplicaSets.
+      A Deployment controller provides declarative updates for Pods and ReplicaSets
       
       A deployment construct is used to
       * Scale the application to handle more load
