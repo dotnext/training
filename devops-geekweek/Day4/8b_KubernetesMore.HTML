@@ -201,10 +201,13 @@
       
       # Helm - High level Description
       
-      Helm is used for easy deployment of complex configurations. 
-      * Using a Chart (similar to a template file) you declare the required components and their relationships 
-      * A local agent (called Tiller and installed inside the cluster) uses the API to install what is specified in the cart
+      Helm is used for easy deployment of complex configurations (pods, services, configmaps etc). 
+      * Using a *Chart* (similar to a template file) you declare the required components and their relationships 
+      * A local agent (called *Tiller* and installed inside the cluster) uses the API to install what is specified in the chart
       Helms looks like "orchestration for orchestration"
+      
+      A *Repository* is a collection of charts: 
+      https://github.com/kubernetes/charts/tree/master/stable
       
       ---
       # Demo
