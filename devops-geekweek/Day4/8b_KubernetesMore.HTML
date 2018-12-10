@@ -160,6 +160,41 @@
       * Volumes are the construct to give persistence to pods
       * They need to address availability (host goes down/pod restarts etc)
       
+      -> Container termination could then result in loss of data
+      
+      ---
+      
+      # Kubernetes Volume plugin System
+      
+      * Create storage automatically when required
+      * Make storage available to containers wherever they’re scheduled
+      * Delete the storage automatically when no longer needed
+      
+      However adding support for new storage systems to Kubernetes has proved to be challenging
+      
+      ---
+      
+      # Kubernetes Storage Implementations
+      
+      * “in-tree” volume plugin : storage interface code is directly embedded into Kubernetes. CONS Releases are gated by Kubernetes releases
+      * CSI : available since Kubernetes 1.9 (Beta) makes installing new volume plugins as easy as deploying a pod. It also enables third-party storage providers to develop solutions without the need to add to the core Kubernetes codebase.
+      * [Flex Volume plugin]
+      
+      ---
+      
+      # Kubernetes remote Storage Examples
+      
+      * GCE Persistent Disk
+      * AWS Elastic Block Store
+      * Azure Data Disk
+      * iSCSI
+      * NFS
+      * GlusterFS
+      * Cinder
+      * Ceph File and RBD
+      
+      And more!
+      
       ---
       
       # Persistent Volumes
@@ -170,6 +205,19 @@
       
       Since Kubernetes 1.6 you could use dynamic provisioning: with this Kubernetes creates a persistent volume corresponding to the claim made by the users. 
       Dynamic provisioning is supported by an API (StorageClass) that lets the administrator define a persistence volume provisoner of a certain type, then the user can self serve from that.
+      
+      ---
+      
+      # Persistent Volume
+      
+      ![inline](../images/persistentVolume.png)
+      
+      ---
+      
+      # Persistent Volume Claim
+      
+      ![inline](../images/persistentVolumeClaim.png)
+      
       ---
       
       # Secrets
