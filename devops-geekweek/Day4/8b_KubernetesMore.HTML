@@ -182,12 +182,22 @@
       # Kubernetes Storage Implementations
       
       * “in-tree” volume plugin : storage interface code is directly embedded into Kubernetes. CONS Releases are gated by Kubernetes releases
-      * CSI : available since Kubernetes 1.9 (Beta) makes installing new volume plugins as easy as deploying a pod. It also enables third-party storage providers to develop solutions without the need to add to the core Kubernetes codebase.
+      * Container Storage Interface (CSI) : available since Kubernetes 1.9 (Beta) makes installing new volume plugins as easy as deploying a pod. It also enables third-party storage providers to develop solutions without the need to add to the core Kubernetes codebase.
       * [Flex Volume plugin]
+      
       
       ---
       
-      # Kubernetes remote Storage Examples
+      # Container Storage Interface (CSI)
+      
+      • Follows in the steps of CRI and CNI
+      • Collaboration with other cluster orchestration systems
+      • CSI makes Kubernetes volume layer truly extensible
+      • Plugins may be containerized     
+      
+      ---
+      
+      # Kubernetes Remote Storage Examples
       
       * GCE Persistent Disk
       * AWS Elastic Block Store
@@ -201,11 +211,21 @@
       And more!
       
       ---
+      # Kubernetes Dynamic Provisioning
+      
+      -> Pre-provisioning PVs is painful and wasteful for Admins
+
+      * Dynamic provisioning creates new volumes on-demand (when requested by user).
+      * Eliminates need for cluster administrators to pre-provision storage.
+      
+      Automatic provisioning is enabled by StorageClass
+      
+      ---
       
       # Persistent Volumes
       
-      * Create Persistent Volume (pv) resource
-      * Create Persistence Volume Claim (pvc)
+      * Create Persistent Volume (PV) resource
+      * Create Persistence Volume Claim (PVC)
       * Write a manifest for a pod that uses this (persistent volume claim as a volume type)
       
       Since Kubernetes 1.6 you could use dynamic provisioning: with this Kubernetes creates a persistent volume corresponding to the claim made by the users. 
