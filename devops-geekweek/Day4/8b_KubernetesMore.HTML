@@ -133,6 +133,8 @@
       * Identity persists over pod redeschuling
       * Used when applications need stable network ids, persistent storage
       * Pods are created sequentially with ordinals suffixed to pod names (pod-0, pod-1..pod-N)
+      * Peers Discovery
+      * Ordering for Startup/Delete
       
       ---
       # Stateful Sets Use case
@@ -153,6 +155,10 @@
       ---
       
       # Volumes
+      
+      * Pods are stateless and short-lived
+      * Volumes are the construct to give persistence to pods
+      * They need to address availability (host goes down/pod restarts etc)
       
       ---
       
